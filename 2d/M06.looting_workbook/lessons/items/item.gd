@@ -4,7 +4,26 @@ extends Area2D
 
 func _ready() -> void:
 	play_floating_animation()
+	get_viewport().physics_object_picking_sort = true
+	get_viewport().physics_object_picking_first_only = true
 
+
+func _collect():
+	var tween := create_tween()	
+	# shrink the item
+	tween.tween_property(self, "scale", Vector2.ZERO, 0.3)
+	# remove it once the animation has finished
+	tween.finished.connect(queue_free)
+
+func _input_event(_viewport: Viewport, event: InputEvent, _shape_index: int):
+	var event_is_left_mouse_click: bool = (
+		event is InputEventMouseButton and
+		event.button_index == MOUSE_BUTTON_LEFT and
+		event.is_pressed()
+	)
+	
+	if event_is_left_mouse_click:
+		_collect()
 
 func play_floating_animation() -> void:
 	var tween := create_tween()
