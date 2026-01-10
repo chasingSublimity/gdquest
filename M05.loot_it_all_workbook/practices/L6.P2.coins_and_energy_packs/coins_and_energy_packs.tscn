@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://cw20yqimdnb27"]
+
+[ext_resource type="PackedScene" uid="uid://bvsc7sop82lb4" path="res://practices/L6.P2.coins_and_energy_packs/ship_coins_and_energy_packs.tscn" id="1_3vg85"]
+[ext_resource type="PackedScene" uid="uid://c268xhe7wvud5" path="res://practices/L6.P2.coins_and_energy_packs/coin.tscn" id="3_5rhq3"]
+[ext_resource type="PackedScene" uid="uid://ba0m0qv0ugxwv" path="res://practices/L6.P2.coins_and_energy_packs/energy_pack.tscn" id="5_w786a"]
+[ext_resource type="PackedScene" path="res://practices/L6.P2.coins_and_energy_packs/background.tscn" id="6_kon0u"]
+
+[node name="CoinsAndEnergyPacks" type="Node2D"]
+
+[node name="Ship" parent="." instance=ExtResource("1_3vg85")]
+position = Vector2(962, 534)
+
+[node name="Coin" parent="." instance=ExtResource("3_5rhq3")]
+position = Vector2(739, 403)
+
+[node name="EnergyPack" parent="." instance=ExtResource("5_w786a")]
+position = Vector2(749, 651)
+
+[node name="Coin2" parent="." instance=ExtResource("3_5rhq3")]
+position = Vector2(961, 754)
+
+[node name="EnergyPack2" parent="." instance=ExtResource("5_w786a")]
+position = Vector2(1155, 616)
+
+[node name="Coin3" parent="." instance=ExtResource("3_5rhq3")]
+position = Vector2(1164, 383)
+
+[node name="EnergyPack3" parent="." instance=ExtResource("5_w786a")]
+position = Vector2(962, 262)
+
+[node name="Background" parent="." instance=ExtResource("6_kon0u")]

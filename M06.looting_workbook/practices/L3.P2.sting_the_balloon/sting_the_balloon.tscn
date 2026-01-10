@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bm7oubyse8o8e"]
+
+[ext_resource type="PackedScene" uid="uid://bf5ne0n8ncihq" path="res://practices/L3.P2.sting_the_balloon/balloon_sting.tscn" id="1_ocr8o"]
+[ext_resource type="PackedScene" path="res://practices/L3.P2.sting_the_balloon/background.tscn" id="3_8ye1d"]
+
+[node name="StingTheBalloon" type="Node2D"]
+metadata/_edit_horizontal_guides_ = []
+
+[node name="BalloonSting" parent="." instance=ExtResource("1_ocr8o")]
+
+[node name="Background" parent="." instance=ExtResource("3_8ye1d")]

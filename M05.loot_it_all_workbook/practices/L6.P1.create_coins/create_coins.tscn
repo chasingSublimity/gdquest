@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://rm5ujrv7wpsx"]
+
+[ext_resource type="PackedScene" path="res://practices/L6.P1.create_coins/ship_create_coins.tscn" id="1_uh8a7"]
+[ext_resource type="PackedScene" uid="uid://82ixkkx6yaxv" path="res://practices/L6.P1.create_coins/coin.tscn" id="3_uh8a7"]
+[ext_resource type="PackedScene" path="res://practices/L6.P1.create_coins/background.tscn" id="3_uysdr"]
+
+[node name="CreateCoins" type="Node2D"]
+
+[node name="Ship" parent="." instance=ExtResource("1_uh8a7")]
+position = Vector2(973, 541)
+
+[node name="Background" parent="." instance=ExtResource("3_uysdr")]
+
+[node name="Coin" parent="." instance=ExtResource("3_uh8a7")]
+position = Vector2(456, 298)
+
+[node name="Coin2" parent="." instance=ExtResource("3_uh8a7")]
+position = Vector2(1207, 173)
+
+[node name="Coin3" parent="." instance=ExtResource("3_uh8a7")]
+position = Vector2(661, 764)

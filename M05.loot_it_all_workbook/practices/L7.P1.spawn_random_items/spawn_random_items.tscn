@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwg3xjuo0qtoe"]
+
+[ext_resource type="PackedScene" path="res://practices/L7.P1.spawn_random_items/random_collectible_placer.tscn" id="1_yrp5e"]
+[ext_resource type="PackedScene" path="res://practices/L7.P1.spawn_random_items/background.tscn" id="3_dcgjc"]
+
+[node name="SpawnRandomItems" type="Node2D"]
+
+[node name="RandomCollectiblePlacer" parent="." instance=ExtResource("1_yrp5e")]
+position = Vector2(960, 540)
+
+[node name="Background" parent="." instance=ExtResource("3_dcgjc")]

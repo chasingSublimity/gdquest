@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bx1ttqblcv1g7"]
+
+[ext_resource type="PackedScene" path="res://practices/L6.P1.the_pinata/balloon_pinata.tscn" id="1_8wema"]
+[ext_resource type="PackedScene" uid="uid://c0d8cph43hx3o" path="res://practices/L6.P1.the_pinata/background.tscn" id="3_fvgdu"]
+
+[node name="ThePiñata" type="Node2D"]
+metadata/_edit_horizontal_guides_ = []
+
+[node name="BalloonPinata" parent="." instance=ExtResource("1_8wema")]
+
+[node name="Background" parent="." instance=ExtResource("3_fvgdu")]
