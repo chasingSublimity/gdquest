@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwhshkk62k3bh"
-path="res://.godot/imported/sparrow.png-4351672e35a5706efa7b9f7efdbafb9e.ctex"
+path="res://.godot/imported/sparrow.png-df7fe87cdfecc24f32a6b9937e330c5f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/bird/sparrow.png"
-dest_files=["res://.godot/imported/sparrow.png-4351672e35a5706efa7b9f7efdbafb9e.ctex"]
+source_file="res://lessons/bird/sparrow.png"
+dest_files=["res://.godot/imported/sparrow.png-df7fe87cdfecc24f32a6b9937e330c5f.ctex"]
 
 [params]
 

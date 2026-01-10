@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dnetm54guji21"]
 
-[ext_resource type="Shader" path="res://assets/bird/shadow.gdshader" id="1_n65kd"]
+[ext_resource type="Shader" uid="uid://d3s8mg37er32b" path="res://lessons/bird/shadow.gdshader" id="1_n65kd"]
 [ext_resource type="Texture2D" uid="uid://b01mnp8qxfbh7" path="res://assets/small_circle.png" id="2_2mb0d"]
 
 [sub_resource type="Gradient" id="Gradient_1pcbm"]
@@ -16,7 +16,6 @@ shader = ExtResource("1_n65kd")
 shader_parameter/shadow_gradient = SubResource("GradientTexture1D_rg04a")
 
 [node name="Shadow" type="Sprite2D"]
-show_behind_parent = true
 material = SubResource("ShaderMaterial_3o8dr")
 scale = Vector2(1.5625, 0.976562)
 texture = ExtResource("2_2mb0d")
