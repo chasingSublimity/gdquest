@@ -29,6 +29,8 @@ func _process(delta: float) -> void:
 	# calc velocity by multiplying player defined direction by max_speed constant
 	velocity += steering_vector * steering_factor * delta
 	position += velocity * delta
+	# If the ship is moving (ie, if the player is pressing something),
+	# face the ship in that direction
 	if direction.length() > 0.0:
 		rotation = velocity.angle()
 
