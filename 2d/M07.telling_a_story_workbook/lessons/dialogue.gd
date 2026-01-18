@@ -61,3 +61,18 @@ func show_text() -> void:
 	
 	audio_stream_player.play(sound_start_position)
 	tween.finished.connect(audio_stream_player.stop)
+	
+	# animate character appearance
+	slide_in()
+
+func slide_in() -> void:
+	var tween := create_tween()
+	tween.set_trans(Tween.TRANS_QUART)
+	tween.set_ease(Tween.EASE_OUT)
+	
+	body.position.x = 200.0
+	tween.tween_property(body, "position:x", 0.0, 0.6)
+	
+	body.modulate.a = 0.0
+	tween.parallel().tween_property(body, "modulate:a", 1.0, 0.4)
+	
